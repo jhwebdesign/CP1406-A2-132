@@ -5,7 +5,9 @@
     <title>Barrier Reef Orchestra</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,12 +16,16 @@
         <div class="logo">
             <img src="assets/logo.png">
         </div>
-        <div class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa fa-bars"></i> Menu
+        </div>
+        <div class="menu" id="menu">
             <ul>
                 <li><a href=""><i class="fa fa-home"></i></a></li>
                 <li><a href="">About</a></li>
-                <li class="menu-sub-link">Concerts</li>
-                <ul class="menu-sub">
+                <li class="menu-sub-link mobile-hide" id="sub-concerts-toggle">Concerts</li>
+                <li class="menu-sub-link mobile-show" id="sub-concerts-mobile-toggle">Concerts</li>
+                <ul class="menu-sub" id="sub-concerts-mobile">
                     <li>Upcoming Events</li>
                     <li>Repertoire</li>
                 </ul>
@@ -29,17 +35,31 @@
                 <li><a href="">Contact</a></li>
                 <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
             </ul>
+            <ul class="menu-sub" id="sub-concerts">
+                <li class="menu-title">Concerts:</li>
+                <li>Upcoming Events</li>
+                <li>Repertoire</li>
+            </ul>
         </div>
     </header>
 
     <div class="hero" id="home">
-        <h1>Townsville's Very<br>Own Orchestra</h1>
+        <h1>Townsville's Very Own Orchestra</h1>
     </div>
 
     <div class="content">
 
-        <p class="emp">Fast becoming one of North Queensland's cultural jewels, the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music through North Queensland. BRO is a community orchestra consisting of the finest musicians drawn
-            from Townsville and as far afield as Cairns and Mackay.</p>
+        <div class="about-us">
+            <div class="about-us-text">
+                <p class="emp">Over a two-year period in the late nineties, Townsville musicians, arts workers and a group of people who had a love for music realised the potential for developing a community-based Orchestra — one that would flourish and become an integral
+                    part of the City’s cultural life. Fast becoming one of North Queensland's cultural jewels, the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music through North Queensland. BRO is a community orchestra
+                    consisting of the finest musicians drawn from Townsville and as far afield as Cairns and Mackay. </p>
+            </div>
+            <div class="about-us-icon">
+                <i class="fa fa-info-circle"> </i><br>
+                <p><a href="" class="btn btn-green">More About Us</a>
+            </div>
+        </div>
 
         <div class="event-upcoming">
             <div class="event-image">
@@ -69,11 +89,52 @@
             </div>
         </div>
 
+        <div class="latest-news">
+            <h2>Latest News!</h2>
+            <div class="latest-news-article">
+                <h3>Notice of 2017 Annual General Meeting</h3>
+                <p>All members are advised that the Annual General Meeting (AGM), of North Queensland Ensembles Inc will take place at Pimlico Performing Arts Centre, Fulham Road, Pimlico on Sunday 21st May 2017, commencing at 2:00pm.</p>
+                <p><a href="" class="btn btn-green">Read More</a></p>
+            </div>
+            <div class="latest-news-article">
+                <h3>Review – AFCM 25th Anniversary Concert</h3>
+                <p>A very pleasant Sunday afternoon in Queens Gardens was attended by approximately three and half thousand satisfied music lovers. This free concert organised to celebrate the 25th Anniversary of the AFCM was also a fitting opportunity for
+                    BRO to celebrate its 15th Anniversary with it’s first ever outdoor public performance.</p>
+                <p><a href="" class="btn btn-green">Read More</a></p>
+            </div>
+        </div>
+
     </div>
+
     <footer>
         <img src="assets/sponsors.jpg">
+        <hr>
         <p>&copy; Copyright North Queensland Ensembles Inc. 2017</p>
     </footer>
+
+    <!-- SHOW HIDE MENU ON MOBILE -->
+    <script>
+        $(document).ready(function() {
+            $('#menu-toggle').click(function() {
+                $('.menu').slideToggle("fast");
+            });
+        });
+    </script>
+
+    <!-- SHOW HIDE SUBMENU -->
+    <script>
+        $(document).ready(function() {
+            $('#sub-concerts-toggle').click(function() {
+                $('#sub-concerts').slideToggle("fast");
+            });
+        });
+
+         $(document).ready(function() {
+            $('#sub-concerts-mobile-toggle').click(function() {
+                $('#sub-concerts-mobile').slideToggle("fast");
+            });
+        });
+    </script>
 
 </body>
 

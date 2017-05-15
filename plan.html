@@ -22,18 +22,30 @@
     h3 {
         color: mediumorchid;
     }
-
+    
     table td,
-    table th{
-        border-bottom:2px solid #ccc;
-        padding:6px 8px;
+    table th {
+        border-bottom: 2px solid #ccc;
+        padding: 6px 8px;
     }
-
-    table th{
-        text-align:left;
-        background-color:#ccc;
+    
+    table th {
+        text-align: left;
+        background-color: #ccc;
     }
-
+    
+    table.table-comps td {
+        vertical-align: top;
+        border-color: #333;
+    }
+    
+    table.table-comps td img {
+        border: 1px solid #333;
+    }
+    
+    img {
+        max-width: 80%;
+    }
 </style>
 
 <body>
@@ -49,20 +61,26 @@
 
     <h3>Success Evaluation</h3>
     <p>
-        The goal of the project is to effectively update the existing website as it is ineffective. The new website aims to raise awareness about and promote interest in the Barrier Reef Orchestra. The development of the new website for the Barrier Reef Orchestra
-        will increase the audience and potential musicians interested in the community.
+        The website will aim to (and success be evaluated by):
+        <ul>
+            <li>New members enquiring to join the orchestra</li>
+            <ul>
+                <li>Of these enquiries, a large portion should be a younger audience</li>
+            </ul>
+            <li>More people attending the orchestra's performances</li>
+            <li>An increased amount of donations</li>
+        </ul>
     </p>
     <h3>Target Audience</h3>
     <p>
         There are two main target audiences for the website:
         <ol>
             <li>
-                <b>People interested in joining</b><br> Whilst the orchestra accepts any age groups, they’d prefer younger talents to join. Therefore, the website should be modern, user friendly and inviting – encouraging younger users to take interest.
+                <b>People interested in joining</b><br> Whilst the orchestra accepts any age groups, they'd prefer younger talents to join. Therefore, the website should be modern, user friendly and inviting - encouraging younger users to take interest. Emphasising bright colours, lots of large vibrant images, and easy to navigate pages/content. The original website was not responsive, had an old outdated design, and catered to a "retro" audience. It has however been updated to a more "youthful design" but improvements could be made.
             </li>
             <li>
                 <b>The public</b><br> The website will be also accessible to the general public, and should include all upcoming events and information, encouraging the community to attend their performances. They also welcome members of the community
-                to donate, and a donation facility or instructions should be available on the website for those who wish to make a monetary contribution.
-
+                to donate, and a donation facility or instructions should be available on the website for those who wish to make a monetary contribution. Easy navigation and large call to actions will be the main improvements here, as they are somewhat lacking. 
             </li>
         </ol>
     </p>
@@ -83,10 +101,10 @@
             </thead>
             <tr>
                 <td>Homepage</td>
-                <td><u>Very little text, mostly images:</u><br> Fast becoming one of North Queensland’s cultural jewels, the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music through North Queensland. BRO is a community
+                <td><u>Very little text, mostly images:</u><br> Fast becoming one of North Queensland's cultural jewels, the Barrier Reef Orchestra this year launches its 17th year of performing orchestral music through North Queensland. BRO is a community
                     orchestra consisting of the finest musicians drawn from Townsville and as far afield as Cairns and Mackay.
                 </td>
-                <td></td>
+                <td><img src="assets/images/plan/content-home.JPG"></td>
             </tr>
             <tr>
                 <td>About Us</td>
@@ -96,7 +114,7 @@
             <tr>
                 <td>Concerts > Upcoming Events</td>
                 <td>A collection of digital posters, used to advertise events.</td>
-                <td></td>
+                <td><img src="assets/images/plan/content-concerts.JPG"></td>
             </tr>
             <tr>
                 <td>Concerts > Repertoire</td>
@@ -111,7 +129,7 @@
             <tr>
                 <td>People > Individual</td>
                 <td></td>
-                <td></td>
+                <td><img src="assets/images/plan/content-people.JPG"></td>
             </tr>
             <tr>
                 <td>Newsfeed</td>
@@ -126,7 +144,7 @@
             <tr>
                 <td>Support Us</td>
                 <td>Users will have the opportunity to make monetary donations from this page. A contact form with donation information will be available for people to enquire.</td>
-                <td></td>
+                <td><img src="assets/images/plan/content-support.JPG"></td>
             </tr>
             <tr>
                 <td>Contact</td>
@@ -136,7 +154,7 @@
             <tr>
                 <td>All Pages</td>
                 <td></td>
-                <td></td>
+                <td><img src="assets/images/plan/content-all.JPG"></td>
             </tr>
         </table>
 
@@ -145,14 +163,14 @@
     <hr>
     <h3>Comps (Design Mockups)</h3>
     <p>
-        <table>
+        <table class="table-comps">
             <tr>
                 <th>Page & Member</th>
                 <th>Image</th>
             </tr>
             <tr>
                 <td>Homepage (Jason)</td>
-                <td><img src="assets/images/plan/comp-home.jpg"></td>
+                <td><img src="assets/images/plan/comp-home.png"></td>
             </tr>
             <tr>
                 <td>About (Tarryn)</td>
@@ -169,6 +187,14 @@
         </table>
     </p>
 
+    <hr>
+    <h3>Coded Page</h3>
+    <a href="people/alan-nixon.html">People > Alan Nixon</a>
+
+    <hr>
+    <h3>GitHub Link</h3>
+    <i class="fa fa-github" style="font-size:60px; vertical-align:middle;margin-right:20px;"></i>
+    <a href="https://github.com/jhwebdesign/CP1406-A2-132">https://github.com/jhwebdesign/CP1406-A2-132</a>
 
     <hr>
     <h3>Coding Delegation</h3>
