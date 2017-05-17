@@ -37,6 +37,7 @@ h6 {
 
 h1 {
     color: #025895;
+    font-family: 'Pacifico', cursive;
 }
 
 h2 {
@@ -74,19 +75,19 @@ h2 {
     margin: 40px 0 0 0;
 }
 
-.mobile-show{
+.mobile-show {
     display: none!important;
 }
 
 @media only screen and (max-width: 480px) {
-    .mobile-show{
+    .mobile-show {
         display: inline-block!important;
     }
-
-    .mobile-hide{
+    .mobile-hide {
         display: none!important;
     }
 }
+
 
 /* --- HEADER --- */
 
@@ -129,60 +130,54 @@ header .menu ul.menu-sub {
 }
 
 header .menu ul.menu-sub li {
-    color:#025895;
+    color: #025895;
 }
 
 header .menu ul.menu-sub li.menu-title {
-    font-weight:400;
-    border-bottom:0;
+    font-weight: 400;
+    border-bottom: 0;
 }
 
-header .menu-toggle{
+header .menu-toggle {
     display: none;
 }
 
 @media only screen and (max-width: 480px) {
-    header{
+    header {
         text-align: center;
-        width:calc(100% - 60px);
+        width: calc(100% - 60px);
     }
-
-    header .menu{
-        width:100%; 
+    header .menu {
+        width: 100%;
         display: none;
     }
-
-    header .menu ul li{
-        margin:0 0 20px 0;
+    header .menu ul li {
+        margin: 0 0 20px 0;
         display: block;
     }
-
-    header .menu-toggle{
+    header .menu-toggle {
         display: inline-block;
-        margin-bottom:10px;
-        cursor:pointer;
-        color:#4D4598;
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: #4D4598;
     }
-
-    header .menu-sub-link{
-        width:100%;
+    header .menu-sub-link {
+        width: 100%;
     }
-
     header .menu ul.menu-sub li {
-        border-bottom:0;
-        font-weight:400;
+        border-bottom: 0;
+        font-weight: 400;
         text-align: left;
         text-indent: calc(50% - 30px);
     }
-
     header .menu ul.menu-sub li:before {
-        content:'-';
-        padding-right:10px;
+        content: '-';
+        padding-right: 10px;
         font-weight: 500;
-        color:#4D4598;
+        color: #4D4598;
     }
-
 }
+
 
 /* --- CONTENT --- */
 
@@ -191,6 +186,7 @@ header .menu-toggle{
     padding: 0 50px;
     padding-bottom: 80px;
 }
+
 
 /* --- HERO --- */
 
@@ -205,15 +201,15 @@ header .menu-toggle{
 .hero h1 {
     margin: 0;
     color: white;
-    font-family: 'Pacifico', cursive;
     font-size: 60px;
 }
 
 @media only screen and (max-width: 580px) {
-    .hero h1{
-        font-size:30px;
+    .hero h1 {
+        font-size: 30px;
     }
 }
+
 
 /* --- HOMEPAGE SPECIFIC --- */
 
@@ -301,6 +297,11 @@ header .menu-toggle{
     width: 300px;
 }
 
+.row-of-boxes a {
+    text-decoration: none;
+    color: #333;
+}
+
 .row-of-boxes .box {
     display: block;
     border: 2px solid #025895;
@@ -337,30 +338,53 @@ header .menu-toggle{
 }
 
 @media only screen and (max-width: 720px) {
-    .hero#home{
-        padding-top:20px;
-        padding-bottom:20px;
+    .hero#home {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-
-    .about-us-text, .about-us-icon, .latest-news{
-        width:100%;
-    }
-
-    .about-us-icon{
-        margin:0;
-    }
-
-    .event-upcoming .event-image{
-        width:100%;
-        margin-bottom:20px;
-    }
-
-    .event-upcoming .event-description{
+    .about-us-text,
+    .about-us-icon,
+    .latest-news {
         width: 100%;
-        padding:0 10px;
     }
-    
+    .about-us-icon {
+        margin: 0;
+    }
+    .event-upcoming .event-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .event-upcoming .event-description {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
+
+
+/* --- PEOPLE PAGES --- */
+
+.people-list-committee .person {
+    display: inline-block;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 10px 10px 0;
+    padding: 14px 20px;
+}
+
+.people-list-committee .person .name,
+.people-list-committee .person .title {
+    margin: 0;
+}
+
+.people-list-committee .person .name {
+    font-size: 22px;
+    font-weight: 400;
+    color: #4EA147;
+}
+
+.people-list-committee .person .title {
+    color: #4EB8C6;
+}
+
 
 /* --- FOOTER --- */
 
