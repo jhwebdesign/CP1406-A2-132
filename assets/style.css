@@ -385,6 +385,22 @@ header .menu-toggle {
     color: #4EB8C6;
 }
 
+/* --- CONCERTS IMAGES --- */
+
+.concert-image-container{
+
+}
+
+.concert-image-container .concert-image{
+display:inline-block;
+margin:0 10px 10px 0;
+}
+
+.concert-image-container .concert-image img{
+width:300px;
+max-width: 80%;
+
+}
 
 /* --- FOOTER --- */
 
