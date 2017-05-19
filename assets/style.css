@@ -385,6 +385,15 @@ header .menu-toggle {
     color: #4EB8C6;
 }
 
+.people-list-committee .person-square {
+    width: 250px;
+}
+
+.people-list-committee .person img {
+    width: 100%;
+    border: 2px solid #4EB8C6;
+}
+
 
 /* --- FOOTER --- */
 
