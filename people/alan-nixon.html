@@ -1,53 +1,75 @@
-<!DOCTYPE html>
-<html>
-
 <head>
     <title>Barrier Reef Orchestra</title>
     <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Scripts  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="../assets/scripts/menus.js"></script>
 </head>
 
 <body>
 
+    <!-- Header and menu -->
     <header>
         <div class="logo">
-            <img src="../assets/logo.png">
+            <a href="../index.html">
+                <img src="../assets/logo.png">
+            </a>
         </div>
-        <div class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa fa-bars"></i> Menu
+        </div>
+        <div class="menu" id="menu">
             <ul>
                 <li><a href="../index.html"><i class="fa fa-home"></i></a></li>
-                <li><a href="">About</a></li>
-                <li class="menu-sub-link">Concerts</li>
-                <ul class="menu-sub">
-                    <li>Upcoming Events</li>
-                    <li>Repertoire</li>
+                <li><a href="../about.html">About</a></li>
+                <li class="menu-sub-link mobile-hide" id="sub-concerts-toggle">Concerts</li>
+                <li class="menu-sub-link mobile-show" id="sub-concerts-mobile-toggle">Concerts</li>
+                <ul class="menu-sub" id="sub-concerts-mobile">
+                    <li><a href="upcoming-events.html">Upcoming Events</a></li>
+                    <li><a href="repertoire.html">Repertoire</a></li>
                 </ul>
-                <li><a href="">People</a></li>
-                <li><a href="">Newsfeed</a></li>
-                <li><a href="">Support Us</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+                <li><a href="../people.html">People</a></li>
+                <li><a href="../newsfeed.html">Newsfeed</a></li>
+                <li><a href="../support-us.html">Support Us</a></li>
+                <li><a href="../contact-us.html">Contact</a></li>
+                <li><a href="https://www.facebook.com/nqorchestra/"><i class="fa fa-facebook-official"></i></a></li>
+            </ul>
+            <ul class="menu-sub" id="sub-concerts">
+                <li class="menu-title">Concerts:</li>
+                <li><a href="upcoming-events.html">Upcoming Events</a></li>
+                <li><a href="repertoire.html">Repertoire</a></li>
             </ul>
         </div>
     </header>
 
+    <!-- Start: Content -->
     <div class="content">
-
         <h1 class="margin-0">Alan Nixon</h1>
         <h2 class="margin-bottom-20">Life member since May 2015</h2>
         <img src="../assets/images/people/alan-nixon.jpg" align="left" class="img-thumbnail img-margin-right">
         <p>
-            Alan has been Secretary of North Queensland Ensembles Inc. /Barrier Reef Orchestra for eight years.</p><p>He is a former Commonwealth Government officer mainly in the Commonwealth Employment Service and prior to retirement he was the Department's Zone Manager
-            for North Queensland. This expertise has served the Orchestra well as Alan has facilitated North Queensland Ensembles becoming incorporated and was also Secretary at the time when we employed our first Orchestra Manager. Alan has a background
-            in community service having been a member of both Australian Jaycees and Rotary. He has also had long experience as an actor, producer and Committee member with several little theatre groups across the State.
+            Alan has been Secretary of North Queensland Ensembles Inc. /Barrier Reef Orchestra for eight years.</p>
+        <p>He is a former Commonwealth Government officer mainly in the Commonwealth Employment Service and prior to retirement he was the Department's Zone Manager for North Queensland. This expertise has served the Orchestra well as Alan has facilitated
+            North Queensland Ensembles becoming incorporated and was also Secretary at the time when we employed our first Orchestra Manager. Alan has a background in community service having been a member of both Australian Jaycees and Rotary. He has
+            also had long experience as an actor, producer and Committee member with several little theatre groups across the State.
         </p>
         <p class="margin-top-40">
             <a href="../people.html" class="btn btn-green btn-outline">Back to People</a>
         </p>
 
     </div>
+
+    <!-- End: Content -->
+
+    <!-- Footer -->
+
     <footer>
+        <img src="../assets/sponsors.jpg">
+        <hr>
         <p>&copy; Copyright North Queensland Ensembles Inc. 2017</p>
     </footer>
 
