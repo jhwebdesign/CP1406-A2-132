@@ -363,11 +363,16 @@ header .menu-toggle {
 
 /* --- PEOPLE PAGES --- */
 
+.people-list-committee a{
+    color:#333333;
+}
+
 .people-list-committee .person {
     display: inline-block;
     border-bottom: 1px solid #d1d1d1;
     margin: 0 10px 10px 0;
     padding: 14px 20px;
+    vertical-align:top;
 }
 
 .people-list-committee .person .name,
