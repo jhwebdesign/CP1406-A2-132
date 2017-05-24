@@ -63,6 +63,12 @@ h2 {
     color: #4EA147;
 }
 
+.btn-white {
+    background-color: white;
+    color: #333333;
+    font-weight: bold;
+}
+
 .margin-0 {
     margin: 0;
 }
@@ -73,6 +79,28 @@ h2 {
 
 .margin-top-40 {
     margin: 40px 0 0 0;
+}
+
+.width-49 {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.width-39 {
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 640px) {
+    .width-49,
+    .width-39 {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .mobile-show {
@@ -210,8 +238,15 @@ header .menu-toggle {
     }
 }
 
+.hero#member p.emp {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
 
-/* --- HOMEPAGE SPECIFIC --- */
+
+/* --- HEROES --- */
 
 .hero#home {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('images/index/hero.jpg');
@@ -219,6 +254,37 @@ header .menu-toggle {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.hero#support {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('images/support-us/hero.jpg');
+    background-position: 50% 50%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero#about {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('images/about/hero.jpg');
+    background-position: 50% 50%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero#news {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('images/news/hero.jpg');
+    background-position: 50% 60%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero#member {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('images/member-hero.jpg');
+    background-position: 50% 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* --- HOMEPAGE SPECIFIC --- */
 
 .about-us {}
 
@@ -363,8 +429,8 @@ header .menu-toggle {
 
 /* --- PEOPLE PAGES --- */
 
-.people-list-committee a{
-    color:#333333;
+.people-list-committee a {
+    color: #333333;
 }
 
 .people-list-committee .person {
@@ -372,7 +438,7 @@ header .menu-toggle {
     border-bottom: 1px solid #d1d1d1;
     margin: 0 10px 10px 0;
     padding: 14px 20px;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .people-list-committee .person .name,
@@ -414,10 +480,52 @@ header .menu-toggle {
     max-width: 80%;
 }
 
->>>>>>>origin/master
+
+/* --- FORMS --- */
+
+form label {
+    width: 180px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: right;
+    color: #4D4598;
+}
+
+form select,
+form input {
+    border: 1px solid #4EB8C6;
+    padding: 10px;
+}
+
+form input[type="submit"] {
+    margin-left: 190px;
+    border: 0;
+}
+
+
+/* --- HISTORY --- */
+
+.history-text {
+    display: none;
+}
+
+.year h3 {
+    border-bottom: 2px solid #4EA147;
+    width: 80px;
+    cursor: pointer;
+    color: #4D4598;
+    font-weight: bold;
+}
+
+.year h3 .fa {
+    margin-left: 10px;
+}
+
+
 /* --- FOOTER --- */
 
 footer {
+    margin-top: 80px;
     color: #4D4598;
     padding: 6px 20px;
     font-size: 16px;
