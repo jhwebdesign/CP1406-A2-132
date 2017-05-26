@@ -81,6 +81,10 @@ h2 {
     margin: 40px 0 0 0;
 }
 
+.margin-right-20 {
+    margin: 0 20px 0 0;
+}
+
 .width-49 {
     width: 49%;
     display: inline-block;
@@ -286,8 +290,8 @@ header .menu-toggle {
 .hero#people {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('images/people/hero.jpg');
     background-position: 50% 80%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
@@ -364,6 +368,17 @@ header .menu-toggle {
     margin: 0;
 }
 
+.concert-review {
+    color: #4EA147;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.concert-review .fa {
+    color: #4D4598;
+}
+
 .row-of-boxes {
     text-align: center;
     display: inline-block;
@@ -438,6 +453,7 @@ header .menu-toggle {
 
 .people-list-committee a {
     color: #333333;
+    text-decoration: none;
 }
 
 .people-list-committee .person {
@@ -480,6 +496,7 @@ header .menu-toggle {
 .concert-image-container .concert-image {
     display: inline-block;
     margin: 0 10px 10px 0;
+    vertical-align: top;
 }
 
 .concert-image-container .concert-image img {
@@ -496,10 +513,12 @@ form label {
     display: inline-block;
     text-align: right;
     color: #4D4598;
+    vertical-align: middle;
 }
 
 form select,
-form input {
+form input,
+form textarea {
     border: 1px solid #4EB8C6;
     padding: 10px;
 }
@@ -509,6 +528,22 @@ form input[type="submit"] {
     border: 0;
 }
 
+form textarea {
+    box-sizing: border-box;
+    width: calc(100% - 250px);
+}
+
+@media only screen and (max-width: 980px) {
+    form label,
+    form select,
+    form input,
+    form textarea,
+    form input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 
 /* --- HISTORY --- */
 
@@ -516,7 +551,7 @@ form input[type="submit"] {
     display: none;
 }
 
-.year h3 {
+.history-container .year h3 {
     border-bottom: 2px solid #4EA147;
     width: 80px;
     cursor: pointer;
@@ -524,8 +559,13 @@ form input[type="submit"] {
     font-weight: bold;
 }
 
-.year h3 .fa {
+.history-container .year h3 .fa {
     margin-left: 10px;
+}
+
+.history-container-wide .year h3 {
+    width: 50%;
+    min-width: 320px;
 }
 
 
